@@ -51,6 +51,10 @@ p {
     font-size: 2em;
 }
 
+button:active {
+    border: none;
+}
+
 /*Display---Flex*/
 .content-topside__promo-desktop,.content-header__desktop,.hamburger,.sidebar__item,.sidebar__item a,.content-icone__header,.content-story__icone,.content-cart__icone,.content-search__icone,.slideshow-slide-content-link,.content-slideshow-image__text,.text-block,.content-text__block,.product-reviews,.content-card__reviews,.header-card_reviews,.content-bottom-card_reviews,.product-regular,.content-btn-add-remove-product_regular,.content-share-icon_regular,.content-blog-post,.content-card-blog-post,.video-block,.content-video_factice,.content-footer-index,.icon-l {
     display: flex;
