@@ -51,7 +51,7 @@ p {
     font-size: 2em;
 }
 
-button {
+button:focus {
     outline: 0;
 }
 
