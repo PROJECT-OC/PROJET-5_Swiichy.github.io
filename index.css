@@ -589,9 +589,11 @@ p {
 }
 
 .middle-side_button p {
+    display: inline-block;
     padding: 0 7.6rem;
     font-weight: 700;
     font-size: 1.1em;
+    white-space: nowrap;
     font-family: 'Ubuntu', sans-serif;
     color: #fff;
 }
@@ -1031,7 +1033,21 @@ p {
     }
 
     .content-btn-add-remove-product_regular {
-        display: none;
+        justify-content: center;
+    }
+
+    .middle-side_button button {
+        height: 40px;
+    }
+
+    .left-side_button i, 
+    .right-side_button i {
+        padding: 1em;
+    }
+
+    .middle-side_button p {
+        padding: 0 4em;
+        font-size: 1em;
     }
 
     .content-cart__icone {
