@@ -866,7 +866,8 @@ p {
     .card-reviews {
         max-width: 340px;
         width: 100%;
-        margin: 1em 1em 1em 1em;
+        margin: auto;
+        margin-bottom: 2em;
     }
 
     .content-text-card_reviews {
