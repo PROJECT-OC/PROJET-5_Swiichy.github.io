@@ -51,8 +51,8 @@ p {
     font-size: 2em;
 }
 
-button:active {
-    border: none;
+button {
+    outline: 0;
 }
 
 /*Display---Flex*/
