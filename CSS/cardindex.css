@@ -1,0 +1,86 @@
+/*CSS du contenu de la card afficher dynamiquement*/
+
+.card-section {
+    width: 100%;
+    margin: auto;
+    padding: 5% 5%;
+    
+    
+}
+
+#teddies-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first-title_cardsection {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #E1285A;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.second-title_cardsection {
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.content-product {
+    max-width: 400px;
+    max-height: 439px;
+    margin: 4em 4em;
+}
+
+.img-product {
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+    filter: brightness(100%);
+    transition: 400ms ease-in-out;
+}
+
+.img-product:hover {
+    filter: brightness(80%);
+    transition: 400ms ease-in-out;
+}
+
+.botside-product {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.name-product {
+    color: #5319A7;
+    font-size: 1.1em;
+}
+
+.price-product {
+    color: #E1285A;
+    font-size: 1.2em;
+}
+
+.active-hover__btn {
+    display: none;
+}
+
+@media (max-device-width : 885px) {
+
+    .content-product {
+        margin: 0;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .price-product {
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
+
+
