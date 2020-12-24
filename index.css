@@ -53,6 +53,7 @@ p {
 
 button:focus {
     outline: 0;
+    background: transparent;
 }
 
 /*Display---Flex*/
