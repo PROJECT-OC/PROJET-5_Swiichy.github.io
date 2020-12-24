@@ -9,14 +9,15 @@
 	<!--Insertion d'un favicon-->
 
 	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="stylesheet" type="text/css" href="navbar.css">
 	<link rel="stylesheet" type="text/css" href="CSS/cardindex.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/99952062c2.js" crossorigin="anonymous"></script>
 
 	<title>Orinoco Shop</title>
 </head>
 
 <body>
+	<!--SCRIPT-->
 	<script type="text/javascript">
 		if (window.innerWidth > 875) {
 			let bigjs = document.createElement('script');
@@ -25,8 +26,9 @@
 			document.getElementsByTagName('body')[0].appendChild(bigjs);
 		}
 	</script>
-
-
+	<!--BACK TO TOP BUTTON-->
+	<a id="button"></a>
+	<!--MAIN-->
 	<div class="container-desktop">
 		<!--HEADER-->
 		<div class="content-topside__promo-desktop content-topside__promo-responsive">
@@ -38,7 +40,7 @@
 			<!--NAVBAR-DESKTOP-->
 			<nav class="sidebar-nav">
 				<div class="hamburger">
-					<i class="fas fa-bars fa-2x"></i>
+					<i class="fas fa-bars"></i>
 					<span>Menu</span>
 				</div>
 			</nav>
@@ -135,9 +137,7 @@
 				</div>
 			</div>
 			<div class="content-logo__header">
-				<a href="#">
-					<img src="images/logo-header.webp" alt="logo">
-				</a>
+				<img src="images/logo-header.webp" alt="logo">
 			</div>
 			<div class="content-icone__header">
 				<div class="content-story__icone">
@@ -573,6 +573,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="JsAnimation/script.js"></script>
 	<script src="JsAnimation/navbar.js"></script>
 	<script src="JsAnimation/counter.js"></script>
 	<script src="JS/Teddy.js"></script>

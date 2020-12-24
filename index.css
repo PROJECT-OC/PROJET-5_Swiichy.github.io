@@ -47,10 +47,55 @@ p {
     color: #7c708b;
 }
 
+.fa-bars {
+    font-size: 2em;
+}
+
 /*Display---Flex*/
 .content-topside__promo-desktop,.content-header__desktop,.hamburger,.sidebar__item,.sidebar__item a,.content-icone__header,.content-story__icone,.content-cart__icone,.content-search__icone,.slideshow-slide-content-link,.content-slideshow-image__text,.text-block,.content-text__block,.product-reviews,.content-card__reviews,.header-card_reviews,.content-bottom-card_reviews,.product-regular,.content-btn-add-remove-product_regular,.content-share-icon_regular,.content-blog-post,.content-card-blog-post,.video-block,.content-video_factice,.content-footer-index,.icon-l {
     display: flex;
 }
+
+/*BACK TO TOP BUTTON*/
+#button {
+    display: inline-block;
+    background-color: #6E538F;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+
+  #button:hover {
+    cursor: pointer;
+    background-color: #E1285A;
+  }
+
+  #button:active {
+    background-color: #555;
+  }
+
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
 
 /*TOPSIDE Promo*/
 .content-topside__promo-desktop {
@@ -788,6 +833,16 @@ p {
         font-size: 0.9em;
     }
 
+    #button {
+        width: 35px;
+        height: 35px;
+    }
+
+    #button::after {
+        font-size: 1.2em;
+        line-height: 32px;
+    }
+
     /*Header*/
     .content-navbar__desktop,
     .content-topside__promo-desktop,
@@ -979,11 +1034,33 @@ p {
         display: none;
     }
 
+    .content-cart__icone {
+        padding: 0;
+    }
+
+    .fa-bars {
+        font-size: 1.2em;
+    }
+
+    .content-cart__icone {
+        display: flex;
+        justify-content: flex-end;
+        width: 93px;
+    }
+
+    .content-icone__header {
+        width: 93px;
+    }
+
+    .cart-icon {
+        margin: 0;
+    }
+
+    .hamburger {
+        padding-left: 0;
+    }
+
+    .sidebar-nav {
+        padding-left: 25px;
+    }
 }
-
-
-
-
-
-
-
