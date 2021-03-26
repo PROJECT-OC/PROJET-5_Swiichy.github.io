@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--Insertion d'un favicon-->
 
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="CSS/cardindex.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/99952062c2.js" crossorigin="anonymous"></script>
@@ -18,6 +18,7 @@
 
 <body>
 	<!--SCRIPT-->
+	<!--Chargement du script en fonction de la taille d'écran de l'utilisateur-->
 	<script type="text/javascript">
 		if (window.innerWidth > 875) {
 			let bigjs = document.createElement('script');
@@ -31,12 +32,12 @@
 	<!--MAIN-->
 	<div class="container-desktop">
 		<!--HEADER-->
-		<div class="content-topside__promo-desktop content-topside__promo-responsive">
+		<div class="content-topside__promo-desktop content-topside__promo-responsive notfixed">
 			<p class="text-topside__promo"><a href="#">Livraison gratuite sur toutes les commandes de plus de 75€ avec
 					le code promo
 					'PLUSH'. L'offre expire le 1er mai.</a></p>
 		</div>
-		<div class="content-header__desktop">
+		<div class="content-header__desktop notfixed">
 			<!--NAVBAR-DESKTOP-->
 			<nav class="sidebar-nav">
 				<div class="hamburger">
@@ -47,114 +48,26 @@
 			<div class="backdrop"></div>
 			<div class="sidebar">
 				<div class="sidebar__list">
+					<li class="sidebar-item__title">
+						<h2>Orinoco</h2>
+					</li>
 					<li class="sidebar__item">
-						<svg class="size-sidebar-icon" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 476.912 476.912"
-							style="enable-background:new 0 0 476.912 476.912">
-							<g>
-								<g>
-									<path fill="#E1285A"
-										d="M461.776 209.408 249.568 4.52c-6.182-6.026-16.042-6.026-22.224.0L15.144 209.4c-3.124 3.015-4.888 7.17-4.888 11.512.0 8.837 7.164 16 16 16h28.2v224c0 8.837 7.163 16 16 16h112c8.837.0 16-7.163 16-16v-128h80v128c0 8.837 7.163 16 16 16h112c8.837.0 16-7.163 16-16v-224h28.2c4.338.0 8.489-1.761 11.504-4.88C468.301 225.678 468.129 215.549 461.776 209.408zM422.456 220.912c-8.837.0-16 7.163-16 16v224h-112v-128c0-8.837-7.163-16-16-16h-80c-8.837.0-16 7.163-16 16v128h-112v-224c0-8.837-7.163-16-16-16h-28.2l212.2-204.88 212.28 204.88H422.456z" />
-								</g>
-							</g>
-						</svg>
 						<a href="#">Accueil</a>
 					</li>
 					<li class="sidebar__item">
-						<div class="sidebar-icon">
-							<svg class="size-sidebar-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512"
-								viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg">
-								<g>
-									<g>
-										<path fill="#E1285A"
-											d="m441.87 197.57c4.143.0 7.5-3.358 7.5-7.5v-41.15c0-4.142-3.357-7.5-7.5-7.5h-53.11v-55.128c0-47.582-38.71-86.292-86.292-86.292-16.637.0-32.59 4.707-46.475 13.633-13.423-8.613-29.362-13.633-46.46-13.633-47.582.0-86.293 38.71-86.293 86.292v55.127h-53.11c-4.142.0-7.5 3.358-7.5 7.5v49.72c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-42.22h251.68V389c0 4.142 3.357 7.5 7.5 7.5s7.5-3.358 7.5-7.5V156.42h38.542v301.07l-38.542 31.27V424c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v73h-251.68V233.64c0-4.142-3.358-7.5-7.5-7.5s-7.5 3.358-7.5 7.5V504.5c0 4.142 3.358 7.5 7.5 7.5h371.74c4.143.0 7.5-3.358 7.5-7.5V225.07c0-4.142-3.357-7.5-7.5-7.5s-7.5 3.358-7.5 7.5v263.297l-36.519-30.79v-301.157h36.519v33.65c0 4.142 3.358 7.5 7.5 7.5zm-51.61 273.225L421.339 497h-63.378zm-87.792-455.795c39.311.0 71.292 31.981 71.292 71.292v55.127h-17.325V86.292c0-29.758-24.209-53.967-53.967-53.967-7.679.0-15.204 1.627-22.118 4.746-3.42-4.905-7.335-9.436-11.673-13.527 10.338-5.605 21.85-8.544 33.791-8.544zm-164.228 71.292c0-39.311 31.982-71.292 71.293-71.292s71.292 31.981 71.292 71.292v55.127h-17.325V86.292c0-29.758-24.209-53.967-53.967-53.967s-53.968 24.209-53.968 53.967v55.127h-17.325zm77.935 55.128h-45.61v-55.128c0-21.487 17.481-38.967 38.968-38.967 5.156.0 10.076 1.016 14.584 2.842-5.209 11.277-7.942 23.619-7.942 36.125zm15-55.128c0-9.577 1.941-19.034 5.649-27.78 7.2 7.074 11.676 16.912 11.676 27.78v55.127h-17.325zm64.65 55.128v-55.128c0-12.888-2.86-25.114-7.947-36.106 4.605-1.868 9.546-2.861 14.589-2.861 21.486.0 38.967 17.48 38.967 38.967v55.127h-45.609z" />
-									</g>
-								</g>
-							</svg>
-						</div>
 						<div class="sidebar-liens">
-							<a href="shop.html">Shop</a>
-						</div>
-					</li>
-					<li class="sidebar__item">
-						<div class="sidebar-icon">
-							<svg class="size-sidebar-icon" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
-								style="enable-background:new 0 0 512 512">
-								<g>
-									<g>
-										<path fill="#E1285A"
-											d="M509.867 89.6c-2.133-2.133-4.267-4.267-8.533-4.267H96L85.333 29.867c0-4.267-6.4-8.533-10.667-8.533h-64C4.267 21.333.0 25.6.0 32c0 6.4 4.267 10.667 10.667 10.667h55.467l51.2 260.267c6.4 34.133 38.4 59.733 72.533 59.733H435.2c6.4.0 10.667-4.267 10.667-10.667.0-6.4-4.267-10.667-10.667-10.667H192c-17.067.0-34.133-8.533-42.667-23.467L460.8 275.2c4.267.0 8.533-4.267 8.533-8.533L512 96C512 96 512 91.733 509.867 89.6zM450.133 256l-311.467 40.533-38.4-192H486.4L450.133 256z" />
-									</g>
-								</g>
-								<g>
-									<g>
-										<path fill="#E1285A"
-											d="M181.333 384C151.467 384 128 407.467 128 437.333c0 29.867 23.467 53.333 53.333 53.333 29.867.0 53.333-23.467 53.333-53.333C234.667 407.467 211.2 384 181.333 384zM181.333 469.333c-17.067.0-32-14.934-32-32s14.933-32 32-32c17.067.0 32 14.934 32 32s-14.932999999999993 32-32 32z" />
-									</g>
-								</g>
-								<g>
-									<g>
-										<path fill="#E1285A"
-											d="M394.667 384c-29.867.0-53.333 23.467-53.333 53.333.0 29.867 23.467 53.333 53.333 53.333 29.867.0 53.333-23.467 53.333-53.333C448 407.467 424.533 384 394.667 384zM394.667 469.333c-17.067.0-32-14.934-32-32s14.933-32 32-32c17.067.0 32 14.934 32 32s-14.933999999999969 32-32 32z" />
-									</g>
-								</g>
-							</svg>
-						</div>
-						<div class="sidebar-liens">
-							<a href="#">Panier</a>
-						</div>
-					</li>
-					<li class="sidebar__item">
-						<div class="sidebar-icon">
-							<svg class="size-sidebar-icon" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 412.72 412.72"
-								style="enable-background:new 0 0 412.72 412.72">
-								<g>
-									<g>
-										<path fill="#E1285A"
-											d="M404.72 82.944c-.027.0-.054.0-.08.0h0-27.12v-9.28c.146-3.673-2.23-6.974-5.76-8-18.828-4.934-38.216-7.408-57.68-7.36-32 0-75.6 7.2-107.84 40-32-33.12-75.92-40-107.84-40-19.464-.048-38.852 2.426-57.68 7.36-3.53 1.026-5.906 4.327-5.76 8v9.2H8c-4.418.0-8 3.582-8 8v255.52c0 4.418 3.582 8 8 8 1.374-.004 2.724-.362 3.92-1.04.8-.4 80.8-44.16 192.48-16h1.2.72c.638.077 1.282.077 1.92.0 112-28.4 192 15.28 192.48 16 2.475 1.429 5.525 1.429 8 0 2.46-1.42 3.983-4.039 4-6.88V90.944C412.72 86.526 409.139 82.944 404.72 82.944zM16 333.664V98.944h19.12v200.64c-.05 4.418 3.491 8.04 7.909 8.09.432.005.864-.025 1.291-.09 16.55-2.527 33.259-3.864 50-4 23.19-.402 46.283 3.086 68.32 10.32C112.875 307.886 62.397 314.688 16 333.664zm78.32-46c-14.551.033-29.085.968-43.52 2.8V79.984c15.576-3.47 31.482-5.241 47.44-5.28 29.92.0 71.2 6.88 99.84 39.2l.24 199.28C181.68 302.304 149.2 287.664 94.32 287.664zm120-173.76c28.64-32 69.92-39.2 99.84-39.2 15.957.047 31.863 1.817 47.44 5.28v210.48c-14.354-1.849-28.808-2.811-43.28-2.88-54.56.0-87.12 14.64-104 25.52v-199.2zm182.32 219.76c-46.496-19.028-97.09-25.831-146.96-19.76 22.141-7.26 45.344-10.749 68.64-10.32 16.846.094 33.663 1.404 50.32 3.92 4.368.663 8.447-2.341 9.11-6.709.065-.427.095-.859.09-1.291V98.944h19.12L396.64 333.664z" />
-									</g>
-								</g>
-							</svg>
-						</div>
-						<div class="sidebar-liens">
-							<a href="#">Journal</a>
-						</div>
-					</li>
-					<li class="sidebar__item">
-						<div class="sidebar-icon">
-							<svg class="size-sidebar-icon" height="560pt" viewBox="-17 -101 560 560" width="560pt"
-								xmlns="http://www.w3.org/2000/svg">
-								<path fill="#E1285A"
-									d="m462.5-5.582031h-400c-34.511719.011719-62.484375 27.988281-62.5 62.5v233.371093c.015625 34.511719 27.988281 62.492188 62.5 62.5h400c34.511719-.007812 62.484375-27.988281 62.5-62.5v-233.371093c-.015625-34.511719-27.988281-62.488281-62.5-62.5zm-400 25h400c18.003906.046875 33.453125 12.824219 36.875 30.496093l-236.875 132.003907-236.875-132.003907c3.421875-17.671874 18.871094-30.449218 36.875-30.496093zm400 308.25h-400c-20.683594-.0625-37.441406-16.816407-37.5-37.5v-212l231.375 128.996093c1.875 1.03125 3.980469 1.59375 6.125 1.628907 2.152344.023437 4.265625-.539063 6.125-1.628907l231.375-128.996093v212c-.015625 20.703125-16.796875 37.480469-37.5 37.5zm0 0" />
-							</svg>
-						</div>
-						<div class="sidebar-liens">
-							<a href="#">Contact</a>
+							<a href="panier.html">Panier</a>
 						</div>
 					</li>
 				</div>
 			</div>
 			<div class="content-logo__header">
-				<img src="images/logo-header.webp" alt="logo">
+				<a href="index.html">
+					<h1>Orinoco</h1>
+				</a>
 			</div>
 			<div class="content-icone__header">
-				<div class="content-story__icone">
-					<a class="icon-l" href="#">
-						<svg class="cart-icon icon-focus_animation_one" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 412.72 412.72"
-							style="enable-background:new 0 0 412.72 412.72">
-							<g>
-								<g>
-									<path fill="#E1285A"
-										d="M404.72 82.944c-.027.0-.054.0-.08.0h0-27.12v-9.28c.146-3.673-2.23-6.974-5.76-8-18.828-4.934-38.216-7.408-57.68-7.36-32 0-75.6 7.2-107.84 40-32-33.12-75.92-40-107.84-40-19.464-.048-38.852 2.426-57.68 7.36-3.53 1.026-5.906 4.327-5.76 8v9.2H8c-4.418.0-8 3.582-8 8v255.52c0 4.418 3.582 8 8 8 1.374-.004 2.724-.362 3.92-1.04.8-.4 80.8-44.16 192.48-16h1.2.72c.638.077 1.282.077 1.92.0 112-28.4 192 15.28 192.48 16 2.475 1.429 5.525 1.429 8 0 2.46-1.42 3.983-4.039 4-6.88V90.944C412.72 86.526 409.139 82.944 404.72 82.944zM16 333.664V98.944h19.12v200.64c-.05 4.418 3.491 8.04 7.909 8.09.432.005.864-.025 1.291-.09 16.55-2.527 33.259-3.864 50-4 23.19-.402 46.283 3.086 68.32 10.32C112.875 307.886 62.397 314.688 16 333.664zm78.32-46c-14.551.033-29.085.968-43.52 2.8V79.984c15.576-3.47 31.482-5.241 47.44-5.28 29.92.0 71.2 6.88 99.84 39.2l.24 199.28C181.68 302.304 149.2 287.664 94.32 287.664zm120-173.76c28.64-32 69.92-39.2 99.84-39.2 15.957.047 31.863 1.817 47.44 5.28v210.48c-14.354-1.849-28.808-2.811-43.28-2.88-54.56.0-87.12 14.64-104 25.52v-199.2zm182.32 219.76c-46.496-19.028-97.09-25.831-146.96-19.76 22.141-7.26 45.344-10.749 68.64-10.32 16.846.094 33.663 1.404 50.32 3.92 4.368.663 8.447-2.341 9.11-6.709.065-.427.095-.859.09-1.291V98.944h19.12L396.64 333.664z" />
-								</g>
-						</svg>
-						<span class="text-icon text-activeOne">Histoire</span>
-					</a>
-				</div>
-				<div class="content-cart__icone">
+				<div id="popUpCart" class="content-cart__icone">
 					<a class="icon-l" href="#">
 						<svg class="cart-icon icon-focus_animation_two" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
 							xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
@@ -178,332 +91,24 @@
 								</g>
 							</g>
 						</svg>
-						<span class="text-icon text-activeTwo">Panier</span>
+						<span id="indexPanier" class="text-icon"></span>
 					</a>
 				</div>
-				<div class="content-search__icone">
-					<a class="icon-l" href="#">
-						<svg class="cart-icon icon-focus_animation_three" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-							xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 396.819 396.819"
-							style="enable-background:new 0 0 396.819 396.819">
-							<g>
-								<g>
-									<path fill="#E1285A"
-										d="M352.103 44.679c-59.237-59.401-155.412-59.535-214.813-.298-57.316 57.157-59.741 149.218-5.515 209.314l-11.6 11.6c-9.372-9.373-24.568-9.375-33.941-.003-.001.001-.002.002-.003.003l-79.2 79.2c-9.373 9.372-9.375 24.568-.003 33.941.001.001.002.002.003.003l11.312 11.312c9.372 9.369 24.564 9.369 33.936.0l79.2-79.2c9.373-9.372 9.375-24.568.003-33.941-.001-.001-.002-.002-.003-.003l11.6-11.6c62.24 56.247 158.292 51.388 214.539-10.851C411.948 194.037 409.521 101.856 352.103 44.679zM120.175 299.231l-79.2 79.2c-3.124 3.123-8.188 3.123-11.312.0l-11.312-11.32c-3.118-3.123-3.118-8.181.0-11.304l79.2-79.2c3.164-3.025 8.148-3.025 11.312.0l11.312 11.32C123.293 291.05 123.293 296.108 120.175 299.231zM340.799 248.327c-53.112 53.11-139.223 53.109-192.333-.003s-53.109-139.223.003-192.333c53.111-53.109 139.219-53.109 192.33.0C393.824 109.139 393.824 195.179 340.799 248.327z" />
-								</g>
-							</g>
-							<g>
-								<g>
-									<path fill="#E1285A"
-										d="M329.479 67.303v0l-11.312 11.312c40.545 40.644 40.545 106.436.0 147.08l11.312 11.312C376.275 190.117 376.275 114.193 329.479 67.303z" />
-								</g>
-							</g>
-						</svg>
-						<span class="text-icon text-activeThree">Rechercher</span>
-					</a>
+				<div class="backdrop-popup"></div>
+				<div id="panier-popup" class="sidebarCart">
+
 				</div>
 			</div>
 		</div>
 		<div class="content-main-responsive">
-			<div class="slideshow-slide-content-link" onclick="window.location.href = 'shop.html'">
-				<div class="content-slideshow-image__text">
-					<div class="content-slideshow-image">
-						<figure class="slideshow-image">
-							<a href="#">
-								<img class="img-slideshow" src="images/slideshow.webp" alt="">
-							</a>
-						</figure>
-					</div>
-					<div class="content-slideshow-text">
-						<h1 class="title-slideshow-text">Jouets Fantaisistes</h1>
-						<p class="text-slideshow-text">
-							Nos collections soigneusement sélectionnées de jouets fabriqués à la main suscitent la joie
-							et
-							l'imagination. Parfait pour les enfants créatifs.
-						</p>
-						<button class="shop-btn" onclick="window.location.href = 'shop.html'">
-							<span class="text-btn">shop now</span>
-						</button>
-					</div>
-				</div>
-			</div>
-			<section class="text-block">
-				<div class="content-text__block">
-					<div class="content-title-text__block">
-						<h2 class="title-text__block">Magasin, Jouer, Amour</h2>
-					</div>
-					<div class="content-text-text__block">
-						<p class="text-text__block">Cette boutique en ligne est née de notre passion pour les jouets, la
-							décoration et les livres uniques pour bébés. Nous nous efforçons de fournir les articles
-							les plus intemporels et bien conçus qui, selon nous, enrichiront votre expérience parentale
-							et
-							apporteront une joie sans fin à vos tout-petits.</p>
-					</div>
-				</div>
-			</section>
 			<div class="card-section">
 				<div class="content-title-cardsection">
-					<p class="first-title_cardsection">new at reach</p>
-					<h2 class="second-title_cardsection">The Bright & Bold Collection</h2>
+					<p class="first-title_cardsection">Nouvelle collection</p>
+					<h2 class="second-title_cardsection">La collection lumineuse et audacieuse</h2>
 				</div>
-				<div id="teddies-wrapper">
+				<!--Teddies-->
+				<div id="listeProduit">
 
-				</div>
-			</div>
-			<div class="product-reviews">
-				<div class="content-title_product-reviews">
-					<h2>Product Reviews</h2>
-				</div>
-				<div class="content-card__reviews">
-					<div class="card-reviews">
-						<div class="header-card_reviews">
-							<div class="content-icone-card_reviews">
-								<i class="fab fa-twitter fa-2x"></i>
-							</div>
-							<div class="content-text-card_reviews">
-								<p class="text-card_reviews">
-									So many fun uses! I'm planning on using this playsilk for newborn photos for my baby
-									girl,
-									who is due any day now! Definitely telling everyone I know about this shop. </p>
-							</div>
-							<div class="content-information-card_reviews">
-								<p>@sheryltowns</p>
-							</div>
-						</div>
-						<div class="content-bottom-card_reviews" onclick="window.location.href = 'shop.html'">
-							<div class="content-img-product_reviews">
-								<img src="images/Large_Rainbow_Playsilk_1_61x61.webp" alt="">
-							</div>
-							<div class="content-name-price_reviews">
-								<div class="name-product_reviews">
-									<p>Rainbow Playsilk</p>
-								</div>
-								<div class="price-product_reviews">
-									<span class="price">$18.00</span>
-								</div>
-							</div>
-							<div class="content-arrow_svg_reviews">
-								<i class="fas fa-chevron-right"></i>
-							</div>
-						</div>
-					</div>
-					<div class="card-reviews">
-						<div class="header-card_reviews">
-							<div class="content-icone-card_reviews">
-								<i class="fas fa-quote-left fa-2x"></i>
-							</div>
-							<div class="content-text-card_reviews">
-								<p class="text-card_reviews">
-									Blown away with the quality, and customer service was also top notch. I received my
-									order within a few days. Can't wait for my next opportunity to order! </p>
-							</div>
-							<div class="content-information-card_reviews">
-								<p>Jack Brown</p>
-							</div>
-						</div>
-						<div class="content-bottom-card_reviews" onclick="window.location.href = 'shop.html'">
-							<div class="content-img-product_reviews">
-								<img src="images/Little_Chickie_61x61.webp" alt="">
-							</div>
-							<div class="content-name-price_reviews">
-								<div class="name-product_reviews">
-									<p>Little Chickie</p>
-								</div>
-								<div class="price-product_reviews">
-									<span class="price">$32.00</span>
-								</div>
-							</div>
-							<div class="content-arrow_svg_reviews">
-								<i class="fas fa-chevron-right"></i>
-							</div>
-						</div>
-					</div>
-					<div class="card-reviews">
-						<div class="header-card_reviews">
-							<div class="content-icone-card_reviews">
-								<i class="fab fa-facebook-f fa-2x"></i>
-							</div>
-							<div class="content-text-card_reviews">
-								<p class="text-card_reviews">
-									The camera is BEAUTIFUL! Such high quality, and so imaginative and fun. I can't wait
-									to
-									give it my nephew for Christmas, he's going to love it! Thank you so much! </p>
-							</div>
-							<div class="content-information-card_reviews">
-								<p>Hannah Chen</p>
-							</div>
-						</div>
-						<div class="content-bottom-card_reviews" onclick="window.location.href = 'shop.html'">
-							<div class="content-img-product_reviews">
-								<img src="images/Wooden_Camera_1_61x61.webp" alt="">
-							</div>
-							<div class="content-name-price_reviews">
-								<div class="name-product_reviews">
-									<p>Wooden Camera</p>
-								</div>
-								<div class="price-product_reviews">
-									<span class="price">$35.00</span>
-								</div>
-							</div>
-							<div class="content-arrow_svg_reviews">
-								<i class="fas fa-chevron-right"></i>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="product-regular">
-				<div class="content-img_regular">
-					<img src="images/Gnome_with_Yellow_Hat_704x704.webp" alt="">
-				</div>
-				<div class="content-info-product_regular">
-					<div class="content-header_regular">
-						<div class="content-brimful_text">
-							<p>Brimful</p>
-						</div>
-						<div class="content-name_product_regular">
-							<h4>Gnome with Yellow Hat</h4>
-						</div>
-						<div class="content-price_regular">
-							<p>$32.00</p>
-						</div>
-					</div>
-					<div class="content-text-product_regular">
-						<p>Did you ever see a gnome so whimsically dressed? This little fellow with the yellow hat makes
-							a
-							wonderful gift and playtime companion! Handknit with luxurious baby alpaca wool at a
-							Bolivian
-							Fair
-							Trade Cooperative, which supports small-scale production and helps to preserve traditional
-							skills.
-							Designed by Main Sauvage in France.</p>
-
-						<p>Measures approximately 11" from head to foot. Hand wash with cold water and mild soap. Lay
-							flat
-							to dry.</p>
-					</div>
-					<div class="content-btn-add-remove-product_regular">
-						<div class="left-side_button">
-							<button onclick="removeItem()">
-								<i class="fas fa-minus"></i>
-							</button>
-						</div>
-						<div class="middle-side_button">
-							<button class="midle">
-								<p>ADD <span class="number-item-js" id="counter-number">1</span> TO CART</p>
-							</button>
-						</div>
-						<div class="right-side_button">
-							<button onclick="addItem()">
-								<i class="fas fa-plus"></i>
-							</button>
-						</div>
-					</div>
-					<div class="content-share-icon_regular">
-						<div class="title-share-icon_regular">
-							<p>Share this</p>
-						</div>
-						<div class="content-share-icon">
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-twitter"></i></a>
-							<a href="#"><i class="fab fa-pinterest"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="content-blog-post">
-				<div class="content-title-blog-post">
-					<h2>Journal</h2>
-				</div>
-				<div class="content-card-blog-post">
-					<div class="card-blog-post">
-						<div class="content-card">
-							<div class="header-card_post">
-								<div class="content-header-date_meta">
-									<span class="date-post">Jan 05,2020</span>
-									<span class="meta-item">Pixel Union</span>
-								</div>
-								<div class="content-title-card_post">
-									<h3>How to Prepare Your Child For Their First Day of School</h3>
-								</div>
-							</div>
-							<div class="content-body-card_post">
-								<p>Moms all over are counting the days until “back to school," while kids are busy
-									packing
-									in
-									every last minute of fun and relaxation that summer has to offer. Here are a few
-									tips to
-									help you ease into fall...
-								</p>
-								<a href="#">
-									<button class="btn-card-body">Read Now</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="card-blog-post">
-						<div class="content-card">
-							<div class="header-card_post">
-								<div class="content-header-date_meta">
-									<span class="date-post">Jan 03,2020</span>
-									<span class="meta-item">Pixel Union</span>
-								</div>
-								<div class="content-title-card_post">
-									<h3>Why Solo Play is Extremely Important for Children</h3>
-								</div>
-							</div>
-							<div class="content-body-card_post">
-								<p>Did you know that you are your child’s first playmate? Emotional self-regulation
-									skills,
-									social skills, and relationship skills come from that early bond you form with your
-									child. One of the challenges for so many...
-								</p>
-								<a href="#">
-									<button class="btn-card-body">Read Now</button>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="card-blog-post">
-						<div class="content-card">
-							<div class="header-card_post">
-								<div class="content-header-date_meta">
-									<span class="date-post">Jan 05,2020</span>
-									<span class="meta-item">Pixel Union</span>
-								</div>
-								<div class="content-title-card_post">
-									<h3>Baby Proof: Guaranteed Safe Toys for Your Little Ones</h3>
-								</div>
-							</div>
-							<div class="content-body-card_post">
-								<p>You just can’t buy any kind of toy for your baby. Toys not only provide enjoyment to
-									your
-									little one, but they also help in mental development. There are a lot of options
-									available in the market. But the most...
-								</p>
-								<a href="#">
-									<button class="btn-card-body">Read Now</button>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="content-btn-card-blog-post">
-					<a href="#">
-						<button>See More</button>
-					</a>
-				</div>
-			</div>
-			<div class="video-block">
-				<div class="content-title-video__block">
-					<h2>Our Story</h2>
-				</div>
-				<div class="content-subtitle-video__block">
-					<span>Watch the video below to see how we started our little business.</span>
-				</div>
-				<div class="content-video_factice">
-					<img src="images/finger-turning-gears_4460x4460_acdcf264-007e-42c4-b3a0-511b770cb76e_1216x704.webp">
-					<i class="fas fa-play-circle fa-4x"></i>
 				</div>
 			</div>
 		</div>
@@ -532,7 +137,6 @@
 							<li class="item-list-section"><a href="#">Journal</a></li>
 							<li class="item-list-section"><a href="#">About</a></li>
 							<li class="item-list-section"><a href="#">Contact</a></li>
-							<li class="item-list-section"><a href="#">Theme</a></li>
 						</ul>
 					</div>
 				</div>
@@ -573,12 +177,12 @@
 			</div>
 		</div>
 	</div>
-	<script src="JsAnimation/script.js"></script>
+	<script src="JsAnimation/scroll.js"></script>
 	<script src="JsAnimation/navbar.js"></script>
-	<script src="JsAnimation/counter.js"></script>
-	<script src="JS/Teddy.js"></script>
-	<script src="JS/TeddiesManager.js"></script>
-	<script src="JS/apiTeddies.js"></script>
+	<script src="JS/script.js"></script>
+	<script>teddies();</script>
+	<script>nombreIndexPanier();</script>
+	<script>panierCreationPopUp();</script>
 </body>
 
 </html>

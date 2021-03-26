@@ -3,15 +3,17 @@
 .card-section {
     width: 100%;
     margin: auto;
-    padding: 5% 5%;
-    
-    
 }
 
 #teddies-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.teddies-wrapper-shop {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .first-title_cardsection {
@@ -29,6 +31,7 @@
 }
 
 .content-product {
+    position: relative;
     max-width: 400px;
     max-height: 439px;
     margin: 4em 4em;
@@ -65,8 +68,82 @@
     font-size: 1.2em;
 }
 
-.active-hover__btn {
-    display: none;
+.content-product:nth-child(4),
+.content-product:nth-child(5){
+    margin-bottom: 0;
+}
+
+.content-img-product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms ease-in-out;
+}
+
+.content-img-product::before {
+    content: "quick shop";
+    position: absolute;
+    z-index: 50;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #fff;
+    background-color: #E1285A;
+    padding: 15px 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    visibility: hidden;
+    transition: 200ms ease-in-out;
+    opacity: 0.6;
+}
+
+.content-img-product:hover::before {
+    visibility: visible;
+    transition: 200ms ease-in-out;
+    opacity: 0.9;
+    -webkit-box-shadow: -1px 24px 21px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 24px 21px -15px rgba(0,0,0,0.75);
+    box-shadow: -1px 24px 21px -15px rgba(0,0,0,0.75);
+}
+
+.content-popover-item {
+    margin-top: 2%;
+}
+
+.content-btn-popover {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 51px;
+}
+
+.btn-popover {
+    width: 11%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F4F9;
+    padding: 15px;
+    border-radius: 25px;
+    color: #867998;
+    cursor: pointer;
+}
+
+.btn-popover:hover {
+    border: 1px solid #867998;
+    padding: 14px;
+}
+
+.fa-chevron-down {
+    font-size: 0.7em;
+}
+
+.content-text-content-btn-popover {
+    padding-left: 5px;
+}
+
+.content-chevron-content-btn-popover {
+    padding-right: 5px;
 }
 
 @media (max-device-width : 885px) {
